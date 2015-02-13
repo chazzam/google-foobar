@@ -1,0 +1,14 @@
+$ verify solution.py 
+Verifying solution...
+All test cases passed.
+
+$ submit  solution.py 
+Are you sure you want to submit your solution?
+[Y]es or [N]o: yes
+Submitting solution...
+Submission: SUCCESSFUL. Completed in: 1 hr, 23 mins, 3 secs.
+
+Level 1 complete. You are now on level 2. Challenges to complete level: 2.
+
+Level 1 100% [==========================================]
+Level 2   0% [..........................................]
