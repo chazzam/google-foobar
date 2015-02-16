@@ -1,0 +1,21 @@
+$ request
+Requesting challenge...
+New challenge "access_codes" added to your home folder.
+Time to solve: 72 hours.
+
+$ verify solution.py 
+Verifying solution...
+All test cases passed.
+
+$ submit solution.py 
+Are you sure you want to submit your solution?
+[Y]es or [N]o: yes
+Submitting solution...
+Submission: SUCCESSFUL. Completed in: 29 mins, 25 secs.
+
+Current level: 2. Challenges to complete level: 1.
+
+Level 1 100% [==========================================]
+Level 2  50% [=====================.....................]
+
+Type request to request a new challenge now, or come back later.
