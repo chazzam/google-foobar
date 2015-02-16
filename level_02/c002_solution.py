@@ -29,8 +29,9 @@ def reduce_splits(times):
         return latest - earliest
     else:
         # rebuild our input
-        times.append([earliest, latest])
         times.extend(splits)
+        # TODO (chazzam) test this with the append here instead of above the extend
+        times.append([earliest, latest])
         return -1
 
 def answer(intervals):
@@ -41,6 +42,7 @@ def answer(intervals):
     # Check for resolvable splits in the time
     num_splits_before = len(intervals)
     num_splits_after = 0
+    # TODO (chazzam) rework this to iterate for the length of interval, resetting if the length changes
     while num_splits_before != num_splits_after:
         num_splits_before = len(intervals)
         time_length = reduce_splits(intervals)
