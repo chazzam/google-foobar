@@ -1,3 +1,6 @@
+# Hah, realized after I submitted this that it doesn't actually handle the problem correctly
+# It only reduces splits across one range, if splits are reducable in another range it won't necessarily find them
+# So this needs to be redone, but not now...
 def reduce_splits(times):
     earliest = times[0][0]
     latest = times[0][1]
