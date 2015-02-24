@@ -35,20 +35,23 @@ def reduce_splits(times):
         return -1
 
 def answer(intervals):
-    # Reduce the number of intervals to find the time
-    time_length = reduce_splits(intervals)
-    if time_length > 0:
-        return time_length
+    #~ # Reduce the number of intervals to find the time
+    #~ time_length = reduce_splits(intervals)
+    #~ if time_length > 0:
+        #~ return time_length
     # Check for resolvable splits in the time
-    num_splits_before = len(intervals)
-    num_splits_after = 0
-    # TODO (chazzam) rework this to iterate for the length of interval, resetting if the length changes
-    while num_splits_before != num_splits_after:
-        num_splits_before = len(intervals)
+    num_splits = len(intervals)
+    t = 0
+    # TODO (chazzam) test this again
+    # iterate for # of intervals, resetting if the length changes
+    while t < num_splits
+        t += 1
         time_length = reduce_splits(intervals)
-        num_splits_after = len(intervals)
         if time_length > 0:
             return time_length
+        if num_splits != len(intervals)
+            num_splits = len(intervals)
+            t = 0
     # Get the total time across splits
     time_length = 0
     for x in intervals:
